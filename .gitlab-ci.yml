@@ -1,0 +1,19 @@
+stages:
+  - build
+  - test
+  - deploy
+
+build: # this is a job
+  stage: build
+  script:
+    - echo "Building"
+
+unittest: # another job
+  stage: test
+  script:
+    - echo "Run a unittest for the app"
+
+deploy: # another job
+  stage: deploy
+  script:
+    - echo "Deploying the app"
